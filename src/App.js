@@ -18,12 +18,14 @@ import { DarkModeContext } from "./context/darkModeContext";
 import { AuthContext } from "./context/authContext";
 
 function App() {
+
   const {currentUser} = useContext(AuthContext);
 
   const { darkMode } = useContext(DarkModeContext);
 
   const Layout = () => {
     return (
+
       <div className={`theme-${darkMode ? "dark" : "light"}`}>
         <Navbar />
         <div style={{ display: "flex" }}>
