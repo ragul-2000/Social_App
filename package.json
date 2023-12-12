@@ -1,8 +1,8 @@
 {
+  "homepage": "https://ragul-2000.github.io/social_app/",
   "name": "social",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://ragul-2000.github.io/Social_app",
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
@@ -28,8 +28,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-    
   },
+  
   "eslintConfig": {
     "extends": [
       "react-app",
