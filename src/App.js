@@ -15,7 +15,6 @@ import "./style.scss";
 import { useContext } from "react";
 import { DarkModeContext } from "./context/darkModeContext";
 import { AuthContext } from "./context/authContext";
-import ErrorBoundary from './ErrorBoundary';
 
 function App() {
  
@@ -79,9 +78,7 @@ function App() {
   return (
     
     <div>
-      <ErrorBoundary>
       <RouterProvider router={router} />
-      </ErrorBoundary>
     </div>
   );
 }
