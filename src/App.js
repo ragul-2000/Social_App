@@ -1,7 +1,7 @@
 import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
 import {
-  createBrowserRouter,
+  createHashRouter, 
   RouterProvider,
   Outlet,
   Navigate,
@@ -18,7 +18,7 @@ import { AuthContext } from "./context/authContext";
 
 function App() {
  
-  const {currentUser} = useContext(AuthContext);
+  const { currentUser } = useContext(AuthContext);
 
   const { darkMode } = useContext(DarkModeContext);
 
@@ -46,7 +46,7 @@ function App() {
     return children;
   };
 
-  const router = createBrowserRouter([
+  const router = createHashRouter([ 
     {
       path: "/",
       element: (
@@ -76,7 +76,6 @@ function App() {
   ]);
 
   return (
-    
     <div>
       <RouterProvider router={router} />
     </div>
